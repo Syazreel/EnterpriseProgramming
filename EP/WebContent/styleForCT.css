@@ -1,0 +1,43 @@
+@charset "ISO-8859-1";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body{
+	display: flex;
+	min-height: 100vh;
+	justify-content: center;
+	align-items: center;
+  	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.80), rgba(255, 111, 39, 0.75)), url('back.jpg') no-repeat;
+  	background-size: cover;
+  	background-position: center;
+}
+
+.first h1{
+	text-align: center;
+	font-size: 4.5em;
+	-webkit-text-fill-color: white;	
+	-webkit-text-stroke: 1px black;
+}
+
+.input-box {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+}
+
+.input-box label{
+	font-size: 2em;
+}
+
+.input-box input{
+	width: 100%;
+	height: 100%;
+	top: 10px;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Staff Login</title>
+	<link href='style.css' rel='stylesheet'>
+</head>
+<body>
+
+	<div class="box">
+		<div class="form-box login">
+			<h2>Staff Login</h2>
+			<form action="#">
+				<div class="input-box">
+					<span class="icon"><ion-icon name="person-circle-outline"></ion-icon></ion-icon>
+					</span>
+					<input type="text" id="myInputA" required>
+					<label>User ID</label>
+				</div>
+				<div class="input-box">
+					<span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+					<input type="password" id="myInputB" required>
+					<label>Password</label>
+				</div>
+				<div class="remember-forgot">
+					<label><input type="checkbox">
+					Remember me</label>
+					<a href="#">Forgot Password?</a>
+				</div>
+				<button type="submit" class="btn">Login</button>
+				<div class="login-register">
+					<p>Don't have an account? 
+						<a href="#" class="register-link" onclick="document.getElementById('myInputA').value = '', document.getElementById('myInputB').value = ''"">Register</a>
+					</p>
+				</div>
+			</form>
+		</div>
+		
+		<div class="form-box register">
+			<h2>Registration</h2>
+			<form action="#">
+				<div class="input-box">
+					<span class="icon"><ion-icon name="happy-outline"></ion-icon></ion-icon>
+					</span>
+					<input type="text" id="myInput1" required>
+					<label>Name</label>
+				</div>
+				<div class="input-box">
+					<span class="icon"><ion-icon name="mail-outline"></ion-icon></ion-icon>
+					</span>
+					<input type="email" id="myInput2" required>
+					<label>Email</label>
+				</div>
+				<div class="input-box">
+					<span class="icon"><ion-icon name="call-outline"></ion-icon></span>
+					<input type="text" id="myInput3" required>
+					<label>Phone Number</label>
+				</div>
+				<div class = "register-table">
+					<table style= "width:100%">
+						<tr>
+							<td style= "width:50%">Staff ID: </td>
+							<td><input type="text" id="myInput4" required></td>
+						</tr>	
+						<tr>
+							<td style= "width:50%">Password: </td>
+							<td><input type="password" id="myInput5" required></td>
+						</tr>
+						<tr>
+							<td style= "width:50%">Re-enter Password: </td>
+							<td><input type="password" id="myInput6" required ></td>
+						</tr>					
+					</table>
+				</div>
+				<div class="remember-forgot">
+					<label><input type="checkbox" id="myInput7">
+					I agree to the terms & conditions</label>
+				</div>
+				<button type="submit" class="btn">Sign Up</button>
+				<div class="login-register">
+					<p>Already have an account? 
+						<a href="#" class="login-link" onclick="document.getElementById('myInput1').value = '', document.getElementById('myInput2').value = '', document.getElementById('myInput3').value = '', document.getElementById('myInput4').value = '', document.getElementById('myInput5').value = '', document.getElementById('myInput6').value = '', document.getElementById('myInput7').on">Login</a>
+					</p>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
